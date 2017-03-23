@@ -63,7 +63,7 @@ void onMouse(int event,int x,int y,int flag,void* param){
     if(flag==CV_EVENT_FLAG_LBUTTON && event==0)
     {
         //拖曳滑鼠
-//        cout << vertexUP.x << " " << vertexUP.y << " " << vertexDown.x << " " << vertexDown.y << endl;
+        //cout << vertexUP.x << " " << vertexUP.y << " " << vertexDown.x << " " << vertexDown.y << endl;
         addedImage = image.clone();
         rectangle(addedImage, vertexUP, vertexDown, color);
         imshow(window,addedImage);
